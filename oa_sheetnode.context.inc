@@ -35,22 +35,6 @@ function oa_sheetnode_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'diff-inline' => array(
-          'module' => 'diff',
-          'delta' => 'inline',
-          'region' => 'right',
-          'weight' => 0,
-        ),
-        'atrium_book-book_all' => array(
-          'module' => 'atrium_book',
-          'delta' => 'book_all',
-          'region' => 'right',
-          'weight' => 1,
-        ),
-      ),
-    ),
     'menu' => 'notebook',
   );
   $context->condition_mode = 0;
