@@ -1,0 +1,10 @@
+<?php
+
+include_once('oa_sheetnode.features.inc');
+
+function oa_sheetnode_strongarm_alter($items) {
+  // Only alter if already set
+  if (isset($items['book_allowed_types'])) {
+    $items['book_allowed_types']->value[] = 'sheetnode';
+  }
+}
